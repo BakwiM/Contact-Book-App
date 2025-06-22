@@ -1,0 +1,124 @@
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f7fa;
+    margin: 0;
+    padding: 0;
+}
+#headerBar {
+    max-width: 500px;
+    margin: 40px auto 10px auto;
+    padding: 12px 20px;
+    background-color: #4fc3f7;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#headerBar h2 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+#table{
+    max-width: 500px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 24px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+tr{
+    cursor: pointer;
+    transition: background 0.2s;
+}
+tr:hover{
+    background: #e6f7ff;
+}
+td{
+    padding: 14px 8px;
+    vertical-align: middle;
+}
+img{
+    border-radius: 50%;
+    border: 2px solid #4fc3f7;
+    background: #b3e5fc;
+}
+#avatarImage{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+#avatarImage img{
+    
+    border: 4px solid #4fc3f7;
+    background: #b3e5fc;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    box-shadow: 0 20px 12px rgba(0,0,0,0.10);
+}
+h5{
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+}
+form#editForm{
+    max-width: 400px;
+    margin: 0 auto;
+    background:#C4E1E6;
+    padding: 30px 24px 18px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+label{
+    font-weight: bold;
+    color: #254D70;
+    margin-bottom: 4px;
+}
+input[type="text"], input[type="file"] {
+    padding: 10px;
+    border: 1px solid #254D70;
+    border-radius: 6px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    background: #f9fbfc;
+    transition: border 0.2s;
+}
+input[readonly] {
+    background: #e6f7ff;
+    color: #888;
+}
+button{
+    background: #4fc3f7;
+    color:white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    margin: 10px 8px 0 0;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover{
+    background: #039be5;
+}
+#editContact, #deleteContact, #homeLink{
+    margin-right: 8px;
+}
+#deleteContact{
+    background: #ff5252;
+}
+#deleteContact:hover{
+    background: #d32f2f;
+}
